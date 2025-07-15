@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./js/main.js">
+
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <section class="main center">
+      <div class="container">
+        <!-- Main -->
+        <div class="form-validation">
+          <div class="icon center"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+          <!-- Form -->
+          <form action="">
+            <!-- Name -->
+            <div class="name space-between">
+              <label for="name">full name</label>
+              <input type="text" id="name" placeholder="Enter your full-name" oninput="onNameInput()">
+              <span></span>
+            </div>
+            <!-- Phone Number -->
+            <div class="phone-number space-between">
+              <label for="phone">phone no.</label>
+              <input type="tel" id="phone" placeholder="123 456 7890" oninput="onPhoneInput()">
+              <span></span>
+            </div>
+            <!-- E-mail -->
+            <div class="email space-between">
+              <label for="email">email id</label>
+              <input type="email" id="email" placeholder="Enter E-mail" oninput="onMailInput()">
+              <span></span>
+            </div>
+            <!-- Message -->
+            <div class="message space-between">
+              <label for="message">your message</label>
+              <textarea type="text" id="message" placeholder="Enter your mesage" oninput="onTextareaInput()"></textarea>
+              <span></span>
+            </div>
+            <!-- Submit Button -->
+            <div class="submit center"><input type="submit" onclick="checkInputValidity()" ></div>
+          </form>
+          <div class="confirmation"></div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
